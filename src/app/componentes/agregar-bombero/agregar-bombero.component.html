@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header">
+        Agregar Bombero
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Formulario</h4>
+
+        <form [formGroup]="formularioDeBombero" (ngSubmit)="enviarDatos()">
+
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre:</label>
+              <input type="text"
+                class="form-control" name="" formControlName="nombres" id="" aria-describedby="helpId" placeholder="Escriba el nombre">
+              <small id="helpId" class="form-text text-muted">Nombres del Bombero</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Apellidos:</label>
+                <input type="text"
+                  class="form-control" name="" formControlName="apellidos" id="" aria-describedby="helpId" placeholder="Escriba los apellidos">
+                <small id="helpId" class="form-text text-muted">Apellidos del Bombero</small>
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="form-label">Coreo Electronico:</label>
+                <input type="email"
+                  class="form-control" name="" formControlName="email" id="" aria-describedby="helpId" placeholder="Escriba el email">
+                <small id="helpId" class="form-text text-muted">email del Bombero</small>
+              </div>
+
+              <div class="btn-group" role="group" aria-label="">
+                  <button type="submit" class="btn btn-success">GUARDAR</button>
+                  <button type="button" class="btn btn-primary">CANCELAR</button>
+                  
+              </div>
+
+
+
+        </form>
+        
+    </div>
+    <div class="card-footer text-muted">
+        SASE29
+    </div>
+</div>

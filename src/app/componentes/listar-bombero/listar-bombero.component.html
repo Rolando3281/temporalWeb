@@ -1,0 +1,38 @@
+
+<div class="card">
+    <div class="card-header">
+        CATALOGO DE BOMBEROS
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Listado</h4>
+        <table class="table table-hover">
+            <thead class="thead-inverse|thead-default">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Fecha de Alta</th>
+                    <th>email</th>
+                    <th>Operaciones</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bombero of bomberos; let iControl=index">
+                        <td scope="row">{{bombero.id}}</td>
+                        <td>{{bombero.nombres}}</td>
+                        <td>{{bombero.apellidos}}</td>
+                        <td>{{bombero.fechaAlta}}</td>
+                        <td>{{bombero.email}}</td>
+                        <td>
+                            <a routerLink="/editar-bombero/{{bombero.id}}" routerLinkActive="router-link-active">  EDITAR </a>| BORRAR</td>
+                    </tr>
+                 
+                </tbody>
+        </table>
+        
+    </div>
+    <div class="card-footer text-muted">
+        SASE29
+    </div>
+</div>
